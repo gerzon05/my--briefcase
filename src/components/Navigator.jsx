@@ -13,17 +13,20 @@ export const Navigator = () => {
           <img src={logo} alt="Logo" className="w-52" />
         </div>
         <nav className="w-[60%] hidden md:block">
-          <a href="#" className="ml-3 font-tillana text-2xl text-white">
+          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+            Start
+          </a>
+          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
             About
           </a>
-          <a href="#" className="ml-3 font-tillana text-2xl text-white">
-            About
+          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+            My Proyect
           </a>
-          <a href="#" className="ml-3 font-tillana text-2xl text-white">
-            About
+          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+            Curriculum
           </a>
-          <a href="#" className="ml-3 font-tillana text-2xl text-white">
-            About
+          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+            Contact
           </a>
         </nav>
         <button className="md:hidden" onClick={() => setOpen(true)}>
@@ -40,16 +43,28 @@ export const Navigator = () => {
           </button>
           <section>
             <nav className="flex flex-col justify-center items-center gap-3">
-              <a href="#" className="w-full px-3 font-tillana text-2xl text-white">
+              <a
+                href="#"
+                className="w-full px-3 font-tillana text-2xl text-white"
+              >
                 About
               </a>
-              <a href="#" className="w-full px-3 font-tillana text-2xl text-white">
+              <a
+                href="#"
+                className="w-full px-3 font-tillana text-2xl text-white"
+              >
                 About
               </a>
-              <a href="#" className="w-full px-3 font-tillana text-2xl text-white">
+              <a
+                href="#"
+                className="w-full px-3 font-tillana text-2xl text-white"
+              >
                 About
               </a>
-              <a href="#" className="w-full px-3 font-tillana text-2xl text-white">
+              <a
+                href="#"
+                className="w-full px-3 font-tillana text-2xl text-white"
+              >
                 About
               </a>
             </nav>

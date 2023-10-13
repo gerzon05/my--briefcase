@@ -1,18 +1,7 @@
-import React, { useCallback } from "react";
-import fondo from "../assets/fondoabout.jpg";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
+import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export const About = () => {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    await loadSlim(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
 
   const [text] = useTypewriter({
     words: ["Gerzon", "developer", "programmer"],
@@ -22,88 +11,7 @@ export const About = () => {
   });
   return (
     <>
-      <div className="w-full h-[88vh] relative overflow-hidden">
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{
-            background: {
-              color: {
-                value: "transparent",
-              },
-            },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-              },
-            },
-            particles: {
-              color: {
-                value: "#ffffff",
-              },
-              links: {
-                color: "#ffffff",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outModes: {
-                  default: "bounce",
-                },
-                random: false,
-                speed: 6,
-                straight: false,
-              },
-              number: {
-                density: {
-                  enable: true,
-                  area: 800,
-                },
-                value: 80,
-              },
-              opacity: {
-                value: 0.7,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                value: { min: 1, max: 5 },
-              },
-            },
-            detectRetina: true,
-          }}
-        />
-        <figure className="absolute -z-10 top-0 left-0 ring-0 bottom-0 w-full">
-          <img
-            src={fondo}
-            alt="fondo"
-            className="w-full h-[88vh] object-cover"
-          />
-        </figure>
+      <div className="relative z-[-1]">
         <div className="px-6 py-10 lg:w-[500px]">
           <h1 className="font-bold py-6 text-2xl sm:text-4xl font-lilita tracking-wider text-white">
             I am <span className="text-green-600">{text}</span>
@@ -111,7 +19,7 @@ export const About = () => {
               <Cursor />
             </span>
           </h1>
-          <p className="text-gray-300 w-[80%] bg-black/60 md:bg-transparent text-md sm:text-xl md:text-lg md:w-[350px] lg:w-[550px] lg:text-2xl mt-10 font-Neue overflow-hidden">
+          <p className="text-gray-300 w-[80%] bg-black/60 md:bg-transparent text-md sm:text-xl md:text-lg md:w-[350px] lg:w-[550px] lg:text-2xl mt-7 font-Neue">
             Soy un apasionado desarrollador web con experiencia sólida en HTML,
             CSS y JavaScript. Mi conocimiento abarca tecnologías como Flexbox,
             Bootstrap, y Tailwind, lo que me permite enfrentar proyectos
