@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { ViewProyect } from "./ViewProyect";
+import { Link } from "react-router-dom";
 export const MyProyect = () => {
   return (
     <div className="flex justify-evenly flex-wrap gap-4 items-center p-4">
@@ -11,10 +12,12 @@ export const MyProyect = () => {
         <p className="text-white text-xl font-Neue tracking-wide my-5">
           Vista previa de algunos de mis proyectos realizados
         </p>
-        <button className="text-white text-xs flex items-center font-tillana hover:text-blue-300 relative z-10 ">
-          Has click aqui para ver todos los proyectos{" "}
-          <BsArrowRightShort className="text-lg ml-2" />
-        </button>
+        <Link to="/myproyect">
+          <button className="text-white text-xs flex items-center font-tillana hover:text-blue-300 relative z-10 ">
+            Has click aqui para ver todos los proyectos{" "}
+            <BsArrowRightShort className="text-lg ml-2" />
+          </button>
+        </Link>
       </section>
       <section className="w-[280px] sm:w-[400px]">
         <ViewProyect

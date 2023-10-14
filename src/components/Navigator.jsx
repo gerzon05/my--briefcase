@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import logo from "../assets/nueva2.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, Outlet } from "react-router-dom";
 
 export const Navigator = () => {
   const [open, setOpen] = useState(false);
@@ -14,13 +15,13 @@ export const Navigator = () => {
         </div>
         <nav className="w-[60%] hidden md:block">
           <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-            Start
+            <Link to="/">Start</Link>
           </a>
           <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-            About
+          <Link to="/">About</Link>
           </a>
           <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-            My Proyect
+          <Link to="/myproyect">My Proyect</Link>
           </a>
           <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
             Curriculum
@@ -29,6 +30,7 @@ export const Navigator = () => {
             Contact
           </a>
         </nav>
+        <Outlet />
         <button className="md:hidden" onClick={() => setOpen(true)}>
           <GiHamburgerMenu className="text-white md:hidden text-3xl" />
         </button>
