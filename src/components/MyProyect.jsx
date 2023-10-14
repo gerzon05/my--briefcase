@@ -2,6 +2,10 @@ import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { ViewProyect } from "./ViewProyect";
 import { Link } from "react-router-dom";
+import pinterest from "../assets/proyectos/Pinterest.png"
+import metav from "../assets/proyectos/metaV.png"
+import tokners from "../assets/proyectos/Tokners.png"
+
 export const MyProyect = () => {
   return (
     <div className="flex justify-evenly flex-wrap gap-4 items-center p-4">
@@ -21,19 +25,19 @@ export const MyProyect = () => {
       </section>
       <section className="w-[280px] sm:w-[400px]">
         <ViewProyect
-          title="tituloe del proyecto"
-          descrip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-          nostrum,"
+          title="Pinterest"
+          img={pinterest}
+          descrip="Este proyecto consistió en la creación de un clon del sitio web Pinterest utilizando tecnologías web modernas, como React y Firebase"
         />
         <ViewProyect
-          title="tituloe del proyecto"
-          descrip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-          nostrum,"
+          title="MetaV"
+          img={metav}
+          descrip="Este proyecto consistió en la creación del sitio MetaV utilizando tecnologías web como HTML, CSS y JAVASCRIPT"
         />
         <ViewProyect
-          title="tituloe del proyecto"
-          descrip="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
-          nostrum,"
+          title="Tokners"
+          img={tokners}
+          descrip="Este proyecto consistió en la creación del sitio Tokners utilizando tecnologías web como HTML, CSS y JAVASCRIPT"
         />
       </section>
     </div>

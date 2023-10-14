@@ -11,24 +11,44 @@ export const Navigator = () => {
     <>
       <div className="sticky z-50 top-0 left-0 right-0 bg-blue-600 px-4 flex justify-between items-center shadow-md shadow-[#e3e4e5]">
         <div>
-          <img src={logo} alt="Logo" className="w-52" />
+          <Link to="/">
+            <img src={logo} alt="Logo" className="w-52" />
+          </Link>
         </div>
         <nav className="w-[60%] hidden md:block">
-          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-            <Link to="/">Start</Link>
-          </a>
-          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-          <Link to="/">About</Link>
-          </a>
-          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
-          <Link to="/myproyect">My Proyect</Link>
-          </a>
-          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+          <Link
+            to="/"
+            href="#"
+            className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
+          >
+            Start
+          </Link>
+          <Link
+            to="/"
+            href="#"
+            className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
+          >
+            About
+          </Link>
+          <Link
+            to="/myproyect"
+            href="#"
+            className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
+          >
+            My Proyect
+          </Link>
+          <Link
+            href="#"
+            className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
+          >
             Curriculum
-          </a>
-          <a href="#" className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 ">
+          </Link>
+          <Link
+            href="#"
+            className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
+          >
             Contact
-          </a>
+          </Link>
         </nav>
         <Outlet />
         <button className="md:hidden" onClick={() => setOpen(true)}>
@@ -45,30 +65,41 @@ export const Navigator = () => {
           </button>
           <section>
             <nav className="flex flex-col justify-center items-center gap-3">
-              <a
+              <Link
+                to="/"
+                href="#"
+                className="w-full px-3 font-tillana text-2xl text-white"
+              >
+                Start
+              </Link>
+              <Link
+                to="/"
                 href="#"
                 className="w-full px-3 font-tillana text-2xl text-white"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
+                to="/myproyect"
                 href="#"
                 className="w-full px-3 font-tillana text-2xl text-white"
               >
-                About
-              </a>
-              <a
+                My Proyect
+              </Link>
+              <Link
+                to="/"
                 href="#"
                 className="w-full px-3 font-tillana text-2xl text-white"
               >
-                About
-              </a>
-              <a
+                Curriculum
+              </Link>
+              <Link
+                to="/"
                 href="#"
                 className="w-full px-3 font-tillana text-2xl text-white"
               >
-                About
-              </a>
+                Contact
+              </Link>
             </nav>
           </section>
         </div>
