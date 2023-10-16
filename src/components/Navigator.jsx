@@ -24,7 +24,7 @@ export const Navigator = () => {
             Start
           </Link>
           <Link
-            to="/"
+            to="/About"
             href="#"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
