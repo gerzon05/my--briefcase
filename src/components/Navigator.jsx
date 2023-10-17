@@ -18,33 +18,30 @@ export const Navigator = () => {
         <nav className="w-[60%] hidden md:block">
           <Link
             to="/"
-            href="#"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             Start
           </Link>
           <Link
             to="/About"
-            href="#"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             About
           </Link>
           <Link
             to="/myproyect"
-            href="#"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             My Proyect
           </Link>
           <Link
-            href="#"
+            to="/Curriculum"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             Curriculum
           </Link>
           <Link
-            href="#"
+            to="/"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             Contact

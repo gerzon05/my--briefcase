@@ -14,7 +14,7 @@ export const About = () => {
       <div className="relative z-[-1]">
         <div className="px-6 py-10 lg:w-[500px]">
           <h1 className="font-bold py-6 text-2xl sm:text-4xl font-lilita tracking-wider text-white">
-            I am <span className="text-green-600">{text}</span>
+            I am <span className="text-amber-400">{text}</span>
             <span>
               <Cursor />
             </span>

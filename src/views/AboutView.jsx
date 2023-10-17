@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Navigator } from "../components/navigator";
+import { Navigator } from "../components/Navigator";
 import fondo from "../assets/code.jpg"
 
 export const AboutView = () => {
