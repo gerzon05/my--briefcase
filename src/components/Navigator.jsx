@@ -41,7 +41,7 @@ export const Navigator = () => {
             Curriculum
           </Link>
           <Link
-            to="/"
+            to="/Contacto"
             className="ml-3 font-tillana text-xl text-white hover:text-green-400 transition-colors duration-1000 "
           >
             Contact
